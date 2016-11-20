@@ -21,16 +21,14 @@ service.getAllCategories = function(){
                         // this callback will be called asynchronously when the response is available
                         console.log("SUCCESS");                 
                         console.log("Status of the request: " + response.status); 
-                        console.log("Text of response " + response.statusText); 
-                        //console.log("result: ", response);
+                        console.log("Text of response " + response.statusText);                       
                         items = response.data; 
-                        console.log("items of getAllCategories:", items);             
-                        //deferred.resolve(response);    
+                        console.log("items of getAllCategories:", items);                            
                         deferred.resolve(items);
                          
                     });
                     return deferred.promise;
-            }; // End service
+            }; 
 
 
 service.getItemsForCategory = function(categoryShortName)
@@ -49,8 +47,7 @@ service.getItemsForCategory = function(categoryShortName)
                             console.log("Status of the request: " + response.status); 
                             console.log("Text of response " + response.statusText); 
                             console.log("result of getItemsForCategory: ", response);        
-                            items = response.data;  
-                            //deferred.resolve(response);
+                            items = response.data;                             
                             deferred.resolve(items); 
                         });
                         return deferred.promise;      

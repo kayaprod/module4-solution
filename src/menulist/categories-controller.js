@@ -12,7 +12,7 @@ function categoriesController(myData) {
     var categories = this;    
     categories.$onInit = function(){
         categories.myData = myData;
-        console.log("----Data in controller---- :", myData);
+        console.log("----Data in controller categories ---- :", myData);
     }
 }
 

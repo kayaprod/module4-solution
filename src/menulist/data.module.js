@@ -11,6 +11,4 @@ angular.module('Data')
   console.log("Data run fired.");
 });
 
-
-
 })();

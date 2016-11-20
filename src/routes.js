@@ -28,7 +28,21 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
               }]
             }
 
+ })
+.state('items', {
+    url: '/items',
+    templateUrl: 'src/menulist/templates/items.template.html',
+    controller: 'itemsController as items',
+    resolve: {
+              myData:['MenuDataService', function(MenuDataService){
+                return MenuDataService.getItemsForCategory(categoryShortName);
+              }]
+            }
+
  });
+
+
+
 }
 
 })();
