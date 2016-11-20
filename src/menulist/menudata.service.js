@@ -35,10 +35,12 @@ service.getItemsForCategory = function(categoryShortName)
     {        
         var deferred = $q.defer(); 
 
-        console.log("getItemsForCategory");
-        // Todo before the call
-        // modified the category with the ShortName
-        $http.get(ApiBasePath + "menu_items.json?category=")                    
+        console.log("getItemsForCategory");        
+        var strRequest = "menu_items.json?category=";
+        strRequest = strRequest + categoryShortName;
+        
+        //$http.get(ApiBasePath + "menu_items.json?category=") 
+        $http.get(ApiBasePath + strRequest)                    
                         .then(function (response)
                         {
                         

@@ -1,8 +1,7 @@
 (function () {
 'use strict';
 
-
-angular.module('Data', [])
+angular.module('Data')
 .controller('itemsController', itemsController); 
 //itemsController.$inject = ['myData','MenuDataService'];
 itemsController.$inject = ['myData'];
