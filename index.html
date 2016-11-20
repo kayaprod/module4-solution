@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <style type="text/css">
+      tab {padding-left:8em;} 
+    </style>
+    <title>Menu</title>
+  </head>
+  <body>
+    <h1><tab>Welcome to our Restaurant</tab></h1>
+
+    <!--<div id="list" ng-controller='TestController as list'>  
+    </div> -->
+
+     <ui-view></ui-view>    
+
+    <!-- Libraries -->
+    <script src="lib/jquery-3.1.0.min.js"></script> 
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    
+    <script src="src/menulist/data.module.js"></script>    
+    <script src="src/menulist/menuapp.module.js"></script>
+    
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'Data' module artifacts -->
+   <!-- <script src="src/shoppinglist/shoppinglist.component.js"></script> -->
+  <script src="src/menulist/categories-controller.js"></script> 
+  <!--  <script src="src/shoppinglist/shoppinglist.factory.js"></script> -->
+        <script src="src/menulist/menudata.service.js"></script>   
+
+  </body>
+</html>
