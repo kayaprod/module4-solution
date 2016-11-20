@@ -16,14 +16,14 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   .state('home', {
     url: '/',
     templateUrl: 'src/menulist/templates/home.template.html'
-  }) 
+  })
 
-.state('categories', {
-    url: '/categories',
-    templateUrl: 'src/menulist/templates/categories.template.html',
-    controller: 'categoriesController as categories',
+.state('mainCategories', {
+    url: '/main-categories',
+    templateUrl: 'src/menulist/templates/main-categories.template.html',
+    controller: 'MainCategoriesController as maincategories',
     resolve: {
-              myData:['MenuDataService', function(MenuDataService){
+              categories:['MenuDataService', function(MenuDataService){
                 return MenuDataService.getAllCategories();
               }]
             }

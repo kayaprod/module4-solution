@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('Data')
-.component('categories', {
+.component('myCategories', {
   templateUrl: 'src/menulist/templates/categories.template.html',
   bindings: {
     categories: '<'
@@ -10,4 +10,3 @@ angular.module('Data')
 });
 
 })();
-
