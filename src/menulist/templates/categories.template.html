@@ -1,5 +1,6 @@
 
   <ul>
   <li ng-repeat="category in $ctrl.categories">
-   <a ui-sref="mainCategories.menuDetail({menuId: $index})">{{ category.url }}</a>
+   <!--<a ui-sref="mainCategories.menuDetail({menuId: $index})">{{ category.url }}</a>-->
+   <a ui-sref="mainCategories.menuDetail({menuId: $index})">{{ category.name }}</a>
  </li></ul>
