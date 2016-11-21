@@ -20,11 +20,11 @@ function MenuDetailController($stateParams, categories,MenuDataService) {
     promise.then(function(response){
     console.log("response", response);
     menuDetail.items = response;
-    //console.log("Reponse requete :", menuDetail.items.menu_items[0].description);
+    //console.log("longueur du tableau :", menuDetail.items.menu_items.length);
     })
     .catch(function(error){
       console.log("There is a problem!")
-    });    
+    });
 }
 
 })();

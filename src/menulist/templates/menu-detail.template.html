@@ -1,5 +1,5 @@
  <h3>Details of menu</h3>
- <div>Menu description: {{ menuDetail.items.menu_items[0].description }} <br>
-   menu name : {{menuDetail.items.menu_items[0].name}} <br>
-   short name :{{menuDetail.items.menu_items[0].short_name}}
+ <div ng-repeat="item in menuDetail.items.menu_items">
+   <strong><span style="color:blue">Menu description:</span></strong> {{item.description}} <br>
+   <strong><span style="color:blue">short name :</span>:</strong> {{item.short_name}}
  </div>
