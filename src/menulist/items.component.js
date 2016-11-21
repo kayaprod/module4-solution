@@ -2,10 +2,10 @@
 'use strict';
 
 angular.module('Data')
-.component('items', {
-  templateUrl: 'src/menulist/templates/items.template.html',
+.component('myItems', {
+  templateUrl: 'src/menulist/templates/menu-detail.template.html',
   bindings: {
-    items: '<'
+    menus: '<'
   }
 });
 

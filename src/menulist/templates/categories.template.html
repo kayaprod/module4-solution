@@ -1,7 +1,5 @@
 
-  <!--<h3>List of categories of menu</h3>-->
   <ul>
   <li ng-repeat="category in $ctrl.categories">
-   <a ui-sref="items">{{ category.url }}</a>
+   <a ui-sref="mainCategories.menuDetail({menuId: $index})">{{ category.url }}</a>
  </li></ul>
-   toto
